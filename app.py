@@ -38,7 +38,7 @@ def main():
                    5 if x=='Sat' else 6)
     weekd = weekd_lambda(st.selectbox('What is the weekday of Arrival',['Mon','Tue','Wed','Thus','Fri','Sat','Sun']))
 
-    inp_list = [lt_t,mst,spcl,price_t,adults,wkend,park,wk,month,day,weekd]
+    inp_list = [lt,mst,spcl,price,adults,wkend,park,wk,month,day,weekd]
 
     if st.button('Predict'):
         response = prediction(inp_list)
