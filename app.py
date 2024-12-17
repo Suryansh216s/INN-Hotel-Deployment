@@ -24,7 +24,7 @@ def main():
     lt = st.text_input('Enter the lead time.')
     mst = (lambda x: 1 if x=='Online' else 0)(st.selectbox('Enter the Type of Booking',['Online','Offline']))
     spcl = st.selectbox('Select the Number of Special Request Made',[0,1,2,3,4,5])
-    price = float(st.text_input('Enter the Price Offered for the Room'))
+    price = st.text_input('Enter the Price Offered for the Room')
     adults = st.selectbox('Select the No. of Adults in Booking',[0,1,2,3,4])
     wkend = st.text_input('Enter the Weekend Nights in the Booking')
     wk = st.text_input('Enter the Weeknights in Booking')
