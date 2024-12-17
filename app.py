@@ -11,6 +11,9 @@ with open ('transformer.pkl','rb') as file:
     pt = pickle.load(file)
 
 def prediction(input_list):
+    tran_data = pt.transform([[input_list[0],input_list[3]]])
+    input_list[0] = tran_data[0][0]
+    input_list[3] = tran_data[0][1]
 
     pred = model.predict_proba([input_list])[:,1][0]
 
